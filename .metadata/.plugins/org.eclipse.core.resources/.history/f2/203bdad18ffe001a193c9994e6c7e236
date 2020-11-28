@@ -1,0 +1,19 @@
+package Java_Interview_questions;
+
+public class String_replaceall {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="This is Anisha  here ";
+		String newstr= str.replaceAll("//s+", "");
+		System.out.println(newstr);
+
+		
+		String str1="       This is Anisha  here ";
+		String newstr= str.trim();
+		System.out.println(newstr);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="16" started="0" failures="0" errors="0" ignored="0">
+  <testsuite name="TestRunner.VCARERunner" incomplete="true">
+    <testsuite name="Feature: Verify Login feature with different scenarios" incomplete="true">
+      <testsuite name="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="And Select below 4 options" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;Invoice for this Child has been already generated for the selected month&quot;" classname="Scenario: 4. Generate Invoice for child whose invoice is  already generated" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="And Select below 4 options" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;You can't select future dates&quot;" classname="Scenario: 5. Generate Invoice for Next Month/Year" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

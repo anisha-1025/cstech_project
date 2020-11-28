@@ -1,0 +1,12 @@
+package Java_Interview_questions;
+
+public class String_Split_words {
+
+	public static void main(String[] args) {
+	
+		String input="Good Morning Everyone";
+		String[] words= 
+
+	}
+
+}

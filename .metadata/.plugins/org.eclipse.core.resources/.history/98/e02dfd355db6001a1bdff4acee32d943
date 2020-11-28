@@ -1,0 +1,12 @@
+
+public class abstract_child extends abstractexample {
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

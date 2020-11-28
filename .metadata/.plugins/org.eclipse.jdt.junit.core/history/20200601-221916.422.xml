@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="8" started="8" failures="0" errors="2" ignored="2">
+  <testsuite name="TestRunner.VCARERunner" time="8.495">
+    <testsuite name="Feature: Verify Login feature with different scenarios" time="8.495">
+      <testsuite name="Scenario: 1.Generate Invoice for Individual child" time="8.428" incomplete="true">
+        <error>java.lang.IndexOutOfBoundsException: Index: 5, Size: 5&#13;
+	at java.util.ArrayList.rangeCheck(Unknown Source)&#13;
+	at java.util.ArrayList.get(Unknown Source)&#13;
+	at PAGES.GenerateInvoicePage.SelectClass(GenerateInvoicePage.java:50)&#13;
+	at VcareGLUE.vcareglue.Select_Options(vcareglue.java:1421)&#13;
+	at ✽.And Select below options(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:8)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1.Generate Invoice for Individual child" time="1.438"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="3.228"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1.Generate Invoice for Individual child" time="0.562"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1.Generate Invoice for Individual child" time="2.243"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 1.Generate Invoice for Individual child" time="0.943"/>
+        <testcase name="And Select below options" classname="Scenario: 1.Generate Invoice for Individual child" time="0.013">
+          <error>java.lang.IndexOutOfBoundsException: Index: 5, Size: 5&#13;
+	at java.util.ArrayList.rangeCheck(Unknown Source)&#13;
+	at java.util.ArrayList.get(Unknown Source)&#13;
+	at PAGES.GenerateInvoicePage.SelectClass(GenerateInvoicePage.java:50)&#13;
+	at VcareGLUE.vcareglue.Select_Options(vcareglue.java:1421)&#13;
+	at ✽.And Select below options(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:8)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 1.Generate Invoice for Individual child" time="0.006" ignored="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;'Successfully Invoice Generated&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="0.051" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

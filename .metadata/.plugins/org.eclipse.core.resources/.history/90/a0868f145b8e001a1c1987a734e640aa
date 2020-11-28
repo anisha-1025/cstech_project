@@ -1,0 +1,43 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Registeration {
+
+	@FindBy(xpath = "//a[text()='Register Now!']")
+	public WebElement RegisterNowLink; 
+	
+	@FindBy(xpath = "//input[@name='FirstName']")
+	public WebElement FirstName;
+	
+	@FindBy(xpath = "//input[@name='LastName']")
+	public WebElement LastName;
+	
+	@FindBy(xpath = "//input[@name='Email']")
+	public WebElement EmailAddress;
+	
+	@FindBy(xpath = "//input[@name='Phone']")
+	public WebElement PhoneNo;
+	
+	@FindBy(xpath = "//input[@name='Password']")
+	public WebElement Password;
+	
+	@FindBy(xpath = "//input[@name='ConfirmPassword']")
+	public WebElement ConfirmPassword;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement SignUp_button;
+	
+	@FindBy(xpath = "//a[text()='You already have a membership?']")
+	public WebElement ExistingMembershipLink;
+	
+	
+	public Registeration(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		
+	}
+	
+}

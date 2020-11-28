@@ -1,0 +1,25 @@
+package Java_Interview_questions;
+
+public class String_contains_digits_only {
+
+	public static void main(String[] args) {
+		String str="1234";
+		isdigitsonly(str);
+			
+
+	}
+	
+	static boolean isdigitsonly(String str)
+	{
+		for(int i=0; i<str.length();i++)
+		{
+			if(str.charAt(i)=='0' && str.charAt(i)=='1')
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	
+
+}

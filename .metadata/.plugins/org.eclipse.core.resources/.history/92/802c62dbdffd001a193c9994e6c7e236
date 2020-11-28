@@ -1,0 +1,19 @@
+package Java_Interview_questions;
+
+public class DuplicateStrings {
+
+	public static void main(String[] args) {
+		String str="beautiful beach";
+		char[] carray=str.toCharArray();
+		for(int i=0; i< str.length();i++)
+		{
+			for(int j=0; j< i; j++)
+			{
+				if(carray[i]== carry[j])
+					System.out.println(carry[j] +" ");
+			}
+		}
+
+	}
+
+}

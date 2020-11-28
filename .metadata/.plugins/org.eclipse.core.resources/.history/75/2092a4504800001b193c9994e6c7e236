@@ -1,0 +1,16 @@
+package Java_Interview_questions;
+
+public class count_Vowel_consonants {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str= "anisha";
+		String str1=str.toCharArray();
+		if(str.charAt(0).matches("[aeiou]"))
+		{
+			System.out.println("vowels");
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class UserDetailsPage {
+	
+	@FindBy(xpath = "//a[@href='/admin/UserDetails/index']")
+	public WebElement UserDetails_link;
+	
+	@FindBy(xpath = )
+	public WebElement
+
+}

@@ -1,0 +1,14 @@
+package Java_Interview_questions;
+
+public class String_Split_words {
+
+	public static void main(String[] args) {
+	
+		String input="Good Morning Everyone? How   are you doing";
+		String[] words= input.split("\\s");
+		int input_lenght= words.length;
+		System.out.println(input_lenght);
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package PAGES;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class ServicesPage {
+
+	@FindBy(xpath = "//a[@href='/admin/Services/index']")
+	public WebElement ServicesList_Link;
+	
+	@FindBy(xpath = "//select[@id='ddlItem']" )
+	public WebElement select_ServiceName_dropdown ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+}

@@ -1,0 +1,32 @@
+package Java_Interview_questions;
+
+public class StringQuestions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String word="Good World";
+		if(word.contains("d World"))
+		{
+			System.out.printf("Yes '%s' contains word 'World' %n ", word );
+		}
+		else
+		{
+			System.out.printf("No '%s' doesnot contain word 'World'%n ", word);
+		}
+
+		
+		if(word.indexOf("World") != -1)
+		{
+			System.out.printf("Yes '%s' contains word 'World' ", word );
+		}
+		else
+		{
+			System.out.printf("No '%s' doesnot contain word 'World' ", word);
+		}
+
+		
+		System.out.println(word.indexOf("Word"));
+	}
+
+}

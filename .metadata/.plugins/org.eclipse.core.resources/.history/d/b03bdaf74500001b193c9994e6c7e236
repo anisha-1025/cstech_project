@@ -1,0 +1,13 @@
+package Java_Interview_questions;
+
+public class SwapStringValues {
+
+	public static void main(String[] args) {
+		String x="HELLO";
+		String y="WORLD";
+		x= x+y;
+		
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package PAGES;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Registeration {
+
+	@FindBy(xpath = "//a[text()='Register Now!']")
+	public WebElement RegisterNowLink; 
+	
+	@FindBy(xpath = "//input[@name='FirstName']")
+	public WebElement FirstName;
+	
+	@FindBy(xpath = "//input[@name='LastName']")
+	public WebElement LastName;
+	
+	@FindBy(xpath = "//input[@name='Email']")
+	public WebElement EmailAddress;
+	
+	@FindBy(xpath = "//input[@name='Phone']")
+	public WebElement PhoneNo;
+	
+	@FindBy(xpath = "//input[@name='Password']")
+	public WebElement Password;
+	
+	@FindBy(xpath = "//input[@name='ConfirmPassword']")
+	public WebElement ConfirmPassword;
+	
+	
+	
+}

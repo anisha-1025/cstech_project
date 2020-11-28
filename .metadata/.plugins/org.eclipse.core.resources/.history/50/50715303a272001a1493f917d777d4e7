@@ -1,0 +1,29 @@
+package PAGES;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class ServicesPage {
+
+	@FindBy(xpath = "//a[@href='/admin/Services/index']")
+	public WebElement ServicesList_Link;
+	
+	@FindBy(xpath = "//select[@id='ddlItem']" )
+	public WebElement select_Service_dropdown ;
+	
+	@FindBy(xpath = "//input[@id='filter']")
+	public WebElement Enter_Value_Search_By_Service_Text;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement service_search_buttotn;;
+	
+	@FindBy(xpath = "//table[@class='table']/tbody/tr[1]/td[1]")
+	public WebElement FirstRowaftersort ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+	@FindBy(xpath = )
+	public WebElement ;
+	
+}

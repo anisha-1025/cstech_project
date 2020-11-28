@@ -1,0 +1,20 @@
+Feature: Verify Empoyee tab
+Scenario: 1.Add an Employee by entering values in all fields 
+Given Launch Vcare application
+Then Enter Customerid, Username and Password like "21", "anisha.prasoon@gmail.com" "Pass@123" 
+And Click on SignIn button
+And Click on Employee tab
+And Click on Employee List tab
+And Click on Add Child button
+And Enter the values on Basic Info page
+|childcode|childfirstname|childlastname|profilepic|nickname|gender|DOB|SSN|Height|Weight|EyesColor|HairStyle|Religion|Meal|Notes|
+|66|Lawrence|Mathew|C:\Users\PC\Downloads\babypics.jpg|JA|male|002018-02-05|567|75cm|11kg|Brown|Side Partition|Hinduism|Veg|Child is little shy|
+And Expand Enrollment section 
+And Enter the values on Enrollment section
+|Enrollment_Date|Class|Package|Discount|Camp|
+|002020-05-01|Toddler|5 days a week Toddler package|Summer Discount|Spring Camp|
+And Click on Next button
+And Enter values on Primary Guardian section
+|ParentFirstName|ParentLastName|SSN|ProfilePic|RelationShip|P_Street|P_City|P_State|P_Zip|P_PhoneHome|EmailAddress|ParentCompanyName|Work_Street|Work_City|Work_State|Work_Zip|Occupation|Work_Phone|LoginName|Password|ConfPassword|
+|anisha|prasoon|678|C:\Users\PC\Downloads\babypics.jpg|Mother|CatalpaRd|Mississauga|Ontario|50563|4567829303|an30isha.prasoon@gmail.com|Cstech|MathesonBlvd|Mississauga|Ontario|50563|Bank Manager|3678909874|lawrence|Pass@123|Pass@123|
+And Expand Other Guardian section

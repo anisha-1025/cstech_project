@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="16" started="16" failures="0" errors="4" ignored="6">
+  <testsuite name="TestRunner.VCARERunner" time="17.206">
+    <testsuite name="Feature: Verify Login feature with different scenarios" time="17.206">
+      <testsuite name="Scenario: 2.Generate Invoice for entire class" time="4.507" incomplete="true">
+        <error>org.openqa.selenium.JavascriptException: javascript error: i is not defined
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4ae0826f85d9ed45268ef05b643651e6&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1413)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:19)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 2.Generate Invoice for entire class" time="0.611"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 2.Generate Invoice for entire class" time="3.308"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 2.Generate Invoice for entire class" time="0.498"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 2.Generate Invoice for entire class" time="0.083"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 2.Generate Invoice for entire class" time="0.007">
+          <error>org.openqa.selenium.JavascriptException: javascript error: i is not defined
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4ae0826f85d9ed45268ef05b643651e6&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1413)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:19)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Select below 3 options" classname="Scenario: 2.Generate Invoice for entire class" time="0.002" ignored="true"/>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 2.Generate Invoice for entire class" time="0.002" ignored="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;'Successfully all Invoice Generated&quot;" classname="Scenario: 2.Generate Invoice for entire class" time="0.001" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="4.459" incomplete="true">
+        <error>org.openqa.selenium.JavascriptException: javascript error: i is not defined
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b0fe5359f370f5e78ef6964c5b304c11&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1413)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:31)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.523"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="3.375"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.485"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.074"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.001">
+          <error>org.openqa.selenium.JavascriptException: javascript error: i is not defined
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b0fe5359f370f5e78ef6964c5b304c11&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1413)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:31)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Select below 3 options" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.001" ignored="true"/>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.002" ignored="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;Invoice for some of Child(s) in this Class has been already generated for the selected month. Please Generate Invoice Individually for other records.&quot;" classname="Scenario: 3. Generate Invoice for entire class where Invoice is already generated for few childs." time="0.026" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

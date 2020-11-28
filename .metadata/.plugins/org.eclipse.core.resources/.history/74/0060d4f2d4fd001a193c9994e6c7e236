@@ -1,0 +1,40 @@
+package Java_Interview_questions;
+
+public class String_Palindrome {
+
+	public static void main(String[] args) {
+
+		String input= "aabaA";
+		System.out.println(input.length());
+		if(ispalindrome(input))
+		{
+			System.out.println("it is a Palindrome");
+		}
+		else
+		{
+			System.out.println("it is not a Palindrome");
+		}
+		
+		
+		
+	}
+
+	private static boolean ispalindrome(String input) {
+		// TODO Auto-generated method stub
+		char[] array= input.toCharArray();
+		int strlenght= array.length; //5
+		
+		for(int i=0; i< strlenght/2; i++ )
+		{
+			if(array[i] != array[strlenght-1-i])
+			{
+				return false;
+			
+			}
+			
+		}
+		return true;
+
+	}
+
+}

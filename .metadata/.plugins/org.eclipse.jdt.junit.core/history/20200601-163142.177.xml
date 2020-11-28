@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="28" started="28" failures="4" errors="0" ignored="0">
+  <testsuite name="TestRunner.VCARERunner" time="55.534">
+    <testsuite name="Feature: Verify Billing-Adjustments tab" time="55.534">
+      <testsuite name="Scenario: 1. Add an Adjustments Charge" time="12.472">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1. Add an Adjustments Charge" time="1.072"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1. Add an Adjustments Charge" time="3.007"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1. Add an Adjustments Charge" time="0.492"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1. Add an Adjustments Charge" time="2.722"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 1. Add an Adjustments Charge" time="0.248"/>
+        <testcase name="And Click on AddAdjustment button" classname="Scenario: 1. Add an Adjustments Charge" time="2.502"/>
+        <testcase name="And Enter value in below Adjsutment fields" classname="Scenario: 1. Add an Adjustments Charge" time="2.225"/>
+        <testcase name="And Click on Adjustment_ADD button" classname="Scenario: 1. Add an Adjustments Charge" time="0.202"/>
+        <testcase name="Then Verify the successful alert message as &quot;Added Successfully&quot;" classname="Scenario: 1. Add an Adjustments Charge" time="0.002"/>
+      </testsuite>
+      <testsuite name="Scenario: 2. Edit an Adjustments Charge" time="12.734" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at VcareGLUE.vcareglue.Verify_success_AlertMessage(vcareglue.java:548)&#13;
+	at ✽.Then Verify the successful alert message as "Added Successfully"(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_Adjustments.feature:27)&#13;
+&#13;
+</failure>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 2. Edit an Adjustments Charge" time="1.064"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 2. Edit an Adjustments Charge" time="3.536"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 2. Edit an Adjustments Charge" time="0.542"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 2. Edit an Adjustments Charge" time="2.785"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 2. Edit an Adjustments Charge" time="0.396"/>
+        <testcase name="And Seacrh an Adjustment &quot;Ria&quot;" classname="Scenario: 2. Edit an Adjustments Charge" time="0.229"/>
+        <testcase name="And Click on Edit link for respective adjustment" classname="Scenario: 2. Edit an Adjustments Charge" time="1.835"/>
+        <testcase name="And Update value in below Adjsutment fields" classname="Scenario: 2. Edit an Adjustments Charge" time="2.161"/>
+        <testcase name="And Click on Adjustment_UPDATE button" classname="Scenario: 2. Edit an Adjustments Charge" time="0.176"/>
+        <testcase name="Then Verify the successful alert message as &quot;Added Successfully&quot;" classname="Scenario: 2. Edit an Adjustments Charge" time="0.01">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at VcareGLUE.vcareglue.Verify_success_AlertMessage(vcareglue.java:548)&#13;
+	at ✽.Then Verify the successful alert message as "Added Successfully"(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_Adjustments.feature:27)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: 3. Delete an Adjustments Charge" time="12.08" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at VcareGLUE.vcareglue.Verify_success_AlertMessage(vcareglue.java:548)&#13;
+	at ✽.Then Verify the successful alert message as "Added Successfully"(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_Adjustments.feature:38)&#13;
+&#13;
+</failure>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 3. Delete an Adjustments Charge" time="1.155"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 3. Delete an Adjustments Charge" time="3.524"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 3. Delete an Adjustments Charge" time="0.513"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 3. Delete an Adjustments Charge" time="2.689"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 3. Delete an Adjustments Charge" time="0.426"/>
+        <testcase name="And Seacrh an Adjustment &quot;Ria&quot;" classname="Scenario: 3. Delete an Adjustments Charge" time="0.385"/>
+        <testcase name="And Click on Delete link for respective adjustment" classname="Scenario: 3. Delete an Adjustments Charge" time="3.222"/>
+        <testcase name="And Click on Adjustment_Delete_YES confirmation button" classname="Scenario: 3. Delete an Adjustments Charge" time="0.165"/>
+        <testcase name="Then Verify the successful alert message as &quot;Added Successfully&quot;" classname="Scenario: 3. Delete an Adjustments Charge" time="0.0">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at VcareGLUE.vcareglue.Verify_success_AlertMessage(vcareglue.java:548)&#13;
+	at ✽.Then Verify the successful alert message as "Added Successfully"(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_Adjustments.feature:38)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

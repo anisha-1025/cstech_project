@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;Java_Interview_questions&apos; to &apos;String_Questions/src&apos;&#x0D;&#x0A;- Original project: &apos;Sampleprogram&apos;&#x0D;&#x0A;- Destination element: &apos;String_Questions/src&apos;&#x0D;&#x0A;- Original element: &apos;Sampleprogram/src/Java_Interview_questions&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=String_Questions/src" element1="/src&lt;Java_Interview_questions" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1600810332468" version="1.0"/>
+</session>

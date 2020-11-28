@@ -1,0 +1,37 @@
+package Java_Interview_questions;
+
+public class String_contains_digits_only {
+
+	public static void main(String[] args) {
+		String str="1234A";
+		if(isdigitsonly(str))
+		{
+			System.out.println("contains digits only");
+		
+		}
+		else
+		{
+			System.out.println("contains other also");
+		}
+			
+
+	}
+	
+	static boolean isdigitsonly(String str)
+	{
+		for(int i=0; i<str.length();i++)
+		{
+			if(str.charAt(i)>='0' && str.charAt(i)<='9')
+			
+				return true;
+			
+		
+		else
+		{
+		return false;
+		}
+			}
+	}
+	
+
+}

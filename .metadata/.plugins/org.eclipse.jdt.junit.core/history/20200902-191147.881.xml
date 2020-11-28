@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="26" started="26" failures="0" errors="6" ignored="14">
+  <testsuite name="TestRunner.VCARERunner" time="70.635">
+    <testsuite name="Feature: Verify Billing-Additional Charges tab" time="70.635">
+      <testsuite name="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="14.06" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e2e8886db67eeebf23b05c652bfe7147
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="2.553"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="1.176"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="10.302"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.026">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e2e8886db67eeebf23b05c652bfe7147
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on Child_Closeout tab" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.01" ignored="true"/>
+        <testcase name="And Select child details from dropdown" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.009" ignored="true"/>
+        <testcase name="And Click on CalculateDues_ReturnDeposit button" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.007" ignored="true"/>
+        <testcase name="Then Verify the text message getting displayed &quot;Child need to pay balance amount:&quot;" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.01" ignored="true"/>
+        <testcase name="And Click on Closeout_Payment_button" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.005" ignored="true"/>
+        <testcase name="Then Verify User lands on Payment Page &quot;V Care - Payments&quot;" classname="Scenario: 1.Closeout child whose Invoice is generated but has payment dues" time="0.006" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: 2.Closeout child whose Invoice is not generated" time="14.332" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 742956f181d4700db837591a1a4fb62a
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:21)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="2.834"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="1.324"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="10.168"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="0.003">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 742956f181d4700db837591a1a4fb62a
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:21)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on Child_Closeout tab" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="0.005" ignored="true"/>
+        <testcase name="And Select child details from dropdown" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="0.005" ignored="true"/>
+        <testcase name="And Click on CalculateDues_ReturnDeposit button" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="0.006" ignored="true"/>
+        <testcase name="Then Verify the alert message as &quot;Present month invoice is missing. Please generate it and then calculate.&quot;" classname="Scenario: 2.Closeout child whose Invoice is not generated" time="0.001" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: 3.Closeout child whose Payment is Clear" time="15.592" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 472a340df81fd824748dfe26b4b45875
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:34)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 3.Closeout child whose Payment is Clear" time="3.366"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 3.Closeout child whose Payment is Clear" time="1.913"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 3.Closeout child whose Payment is Clear" time="10.308"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 3.Closeout child whose Payment is Clear" time="0.003">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='slimScrollDiv']/ul/li[6]/a/span"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 472a340df81fd824748dfe26b4b45875
+*** Element info: {Using=xpath, value=//div[@class='slimScrollDiv']/ul/li[6]/a/span}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_closeout.feature:34)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on Child_Closeout tab" classname="Scenario: 3.Closeout child whose Payment is Clear" time="0.004" ignored="true"/>
+        <testcase name="And Select child details from dropdown" classname="Scenario: 3.Closeout child whose Payment is Clear" time="0.003" ignored="true"/>
+        <testcase name="And Click on CalculateDues_ReturnDeposit button" classname="Scenario: 3.Closeout child whose Payment is Clear" time="0.015" ignored="true"/>
+        <testcase name="Then Verify the text message getting displayed &quot;Payments are clear, you can closeout child&quot;" classname="Scenario: 3.Closeout child whose Payment is Clear" time="0.256" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

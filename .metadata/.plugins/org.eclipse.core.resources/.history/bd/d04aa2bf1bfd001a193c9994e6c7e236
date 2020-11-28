@@ -1,0 +1,16 @@
+package Java_Interview_questions;
+
+public class StringQuestions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String word="Hello World";
+		if(word.contains("World"))
+		{
+			System.out.printf("Yes '%s' contains word 'World' ", word );
+		}
+
+	}
+
+}

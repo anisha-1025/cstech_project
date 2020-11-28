@@ -1,0 +1,11 @@
+package Java_Interview_questions;
+
+public class String_substring {
+	public static void main(String[] args) {
+	
+		String text="Java is a coding, love coding in Java";
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package Java_Interview_questions;
+
+public class RegularExpression_example {
+
+	public static void main(String[] args) {
+		String str="@#ANIHSA$%^&ANISHA";
+		String s= str.replaceAll("[^A-Za-z0-9]", "");
+		System.out.println(s);
+	}
+}

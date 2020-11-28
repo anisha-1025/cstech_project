@@ -1,0 +1,23 @@
+package Java_Interview_questions;
+
+public class String_Occurences {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="aaabbbcccddde";
+		int[] counter= new int[256];
+		for(int i=0; i< str.length(); i++)
+			counter[str.charAt(i)]++;
+		
+		char[] arr= new char[str.length()];
+		int flag=0;
+		for(int i=0; i< len; i++)
+		{
+			arr[i]=str.charAt(i);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+public class arraylist_example  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList a= new ArrayList();
+		a.add(10);
+		a.add("anisha");
+		a.add("anisha");
+		
+		//for(int i=0; i<a.size();i++)
+		//{
+			System.out.println(a);
+		//}
+
+	/****GENERIC ARRAYLIST*************/
+	ArrayList<Integer> aint= new ArrayList<Integer>(); 
+	aint.add(10);
+	aint.add(20);
+	System.out.println(aint);
+	
+	
+	ArrayList<String> as= new ArrayList<String>();
+	as.add("anisha");
+	as.add("riyu");
+	
+System.out.println(as);
+	}
+
+}

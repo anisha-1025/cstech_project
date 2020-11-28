@@ -1,0 +1,16 @@
+package Java_Interview_questions;
+
+public class String_substring {
+	public static void main(String[] args) {
+	
+		String text="ANISHA";
+		String text1= text.substring(18);
+		System.out.println(text1);
+		
+		String text2= text.substring(18, 22);
+		System.out.println(text2);
+		
+		
+	}
+
+}

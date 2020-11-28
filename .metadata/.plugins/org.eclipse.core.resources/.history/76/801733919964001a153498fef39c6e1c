@@ -1,0 +1,285 @@
+package CompclinicGLUE;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import PAGES.HomePage;
+import PAGES.LandingPage;
+import PAGES.LoginPage;
+import PAGES.RegisterationPage;
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import gherkin.deps.com.google.gson.annotations.Until;
+import junit.framework.Assert;
+
+public class compclinicglue {
+
+	public WebDriver driver;
+	public HomePage hp;
+	public RegisterationPage rp;
+	public LoginPage lp;
+	public LandingPage lan;
+	public WebDriverWait w;
+	public Scenario s;
+	public Properties prop;
+
+	@Before
+	public void method(Scenario s) throws IOException {
+		this.s = s;
+		FileInputStream fs = new FileInputStream(
+				"C:\\AnishaWorkspace\\compclinic\\src\\test\\resources\\repository\\file.properties");
+		prop = new Properties();
+		prop.load(fs);
+	}
+
+	@Given("^Launch compclinic website$")
+	public void LaunchCompclinicWebsite() {
+		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverpath"));
+		driver = new ChromeDriver();
+		hp = new HomePage(driver);
+		rp = new RegisterationPage(driver);
+		lp = new LoginPage(driver);
+		lan= new LandingPage(driver);
+		w = new WebDriverWait(driver, 10);
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
+	}
+
+	@When("^click on Register link$")
+	public void Click_Registeration_Link() {
+		System.out.println("inside registeration 1st");
+		w.until(ExpectedConditions.elementToBeClickable(hp.RegisterLink));
+
+		hp.ClickRegisterLink();
+
+	}
+
+	@When("^Enter firstname,lastname,contactnumber,Emailid, Password, Re_Password like \"(.*)\", \"(.*)\", \"(.*)\", \"(.*)\", \"(.*)\", \"(.*)\" value$")
+	public void enter_firstname_lastname_conatctNumber_Emailid_Password_Re_enterpassword_like_value(String un,
+			String ln, String cn, String em, String pwd, String re_pwd) throws Exception {
+
+		w.until(ExpectedConditions.elementToBeClickable(rp.Firstname));
+		rp.EnterFirstName(un);
+		w.until(ExpectedConditions.visibilityOf(rp.Lastname));
+		rp.EnterLastName(ln);
+		rp.EnterContactNumber(cn);
+		rp.EnterEmailId(em);
+		rp.EnterPassword(pwd);
+		rp.Re_EnterPassword(re_pwd);
+		rp.check_show_password();
+		Thread.sleep(3000);
+	}
+
+	@And("^Click on Register Button$")
+	public void click_Register_button_method() {
+		w.until(ExpectedConditions.elementToBeClickable(rp.Registerbutton));
+		rp.Click_Register_Button();
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^verify message with \"(.*)\"$")
+	public void verify_message(String expectedoutput) {
+		try {
+			w.until(ExpectedConditions.visibilityOf(rp.Registeration_confirmation_message));
+			Assert.assertTrue((rp.Registeration_confirmation_message.getText()).contains(expectedoutput));
+
+		} catch (Exception e) {
+			s.write(e.getMessage());
+		}
+
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^verify login message with \"(.*)\" and \"(.*)\"$")
+	public void verify_login_message_output(String expectedoutput, String type) {
+		try {
+
+			if (type.equals("valid")) {
+				Assert.assertEquals(expectedoutput, driver.getTitle());
+			} else {
+				Assert.assertTrue((rp.Registeration_confirmation_message.getText()).contains(expectedoutput));
+			}
+		} catch (Exception e) {
+			s.write(e.getMessage());
+		}
+	}
+
+	@Then("^user clicks on Login link$")
+	public void user_clicks_on_Login_link() {
+		hp.ClickLoginLink();
+	}
+
+	@When("^user enters Emaild and Password like \"(.*)\" and \"(.*)\" value$")
+	public void user_enters_Emaild_and_Password_like_and_value(String x, String y) {
+		lp.LoginP_Enter_Email(x);
+		lp.LoginP_Enter_Password(y);
+	}
+
+	@When("^user clicks on Login button$")
+	public void user_clicks_on_Login_button() {
+		lp.Click_LoginP_LoginButton();
+	}
+
+	@When("^user clicks on Forgot password link$")
+	public void user_clicks_on_Forgot_password_link() {
+		lp.Click_LoginP_ForgotPasswordlink();
+	}
+
+	@When("^User enters emailid \"(.*)\"$")
+	public void user_enters_emailid(String x) {
+		lp.Enter_Email_Forgot_Password.sendKeys(x);
+	}
+
+	@When("^user clicks on Submit button$")
+	public void user_clicks_on_Submit_button() 
+	{
+		lp.Forgot_Password_Submit_button.click();
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^verify the page title \"(.*)\" getting displayed$")
+	public void verify_the_message_getting_displayed(String title) {
+		
+		Assert.assertEquals(title, driver.getTitle());
+
+	}
+	
+	@When("^user clicks on Register link$")
+	public void user_clicks_on_Register_link(){
+		lp.RegisterLink_LoginPage();
+	}
+	
+//	@SuppressWarnings("deprecation")
+//	@Then("^verify that user navigates to Regiteration page$")
+//	public void Verify_user_navigation()
+//	{
+//		Assert.assertEquals("Comp Clinic - Register", driver.getTitle());
+//	}
+	
+	@When("^close site$")
+	public void close_browser()
+	{
+		driver.close();
+	}
+	
+	
+
+	@When("^user enters Email password \"(.*)\" and \"(.*)\" value$")
+	public void user_enters_Emaild_and_Password_to_login_and_value(String arg1, String arg2)
+	{
+		lp.LoginPage_Email.sendKeys(arg1);
+		lp.LoginP_Enter_Password(arg2);
+	}
+	@And("^enter \"(.*)\" in searchbar$")
+	public void enter_product_searchbar(String x)
+	{
+		lan.Enter_searchbar(x);
+	}
+	
+	@And("^click on search button$")
+	public void click_on_search_button()
+	{
+		w.until(ExpectedConditions.visibilityOf(lan.searchbutton));
+		lan.click_searchbutton();
+	}
+	
+	@And("^click on the item you want to purchase$")
+	public void clickon_item_to_purchase()
+	{
+		lan.Select_FirstListedOption();
+	}
+	
+	@And("^click on Add to Cart button$")
+	public void click_AddtoCart_button()
+	{			
+		w.until(ExpectedConditions.elementToBeClickable(lan.AddtoCartbutton));
+		lan.Click_AddtoCartbutton();
+	}
+	
+	@And("^Enter the shipping address$")
+	public void Enter_shipping_Address(DataTable dt) throws Exception
+	{
+		List<Map<String,String>> data= dt.asMaps(String.class, String.class);
+		
+		w.until(ExpectedConditions.visibilityOf(lan.phoneno));
+		Thread.sleep(2000);
+		String Phone_No=data.get(0).get("Phone_No");
+		
+		Thread.sleep(2000);
+		w.until(ExpectedConditions.visibilityOf(lan.address));
+		String Address_Line1=data.get(0).get("Address_Line1");
+		
+		Thread.sleep(2000);
+		w.until(ExpectedConditions.visibilityOf(lan.address2));
+		String Address_Line2=data.get(0).get("Address_Line2");
+
+		Thread.sleep(2000);
+		w.until(ExpectedConditions.visibilityOf(lan.city));
+		String City=data.get(0).get("City");
+		
+		Thread.sleep(2000);
+		w.until(ExpectedConditions.visibilityOf(lan.state));
+		String State=data.get(0).get("State/Province");
+		
+		Thread.sleep(2000);
+		w.until(ExpectedConditions.visibilityOf(lan.zip));
+		String Zip=data.get(0).get("Zip");
+		
+		lan.Enter_phoneno(Phone_No);
+		lan.Enter_address(Address_Line1);
+		lan.Enter_address2(Address_Line2);
+		lan.Enter_city(City);
+		lan.Enter_state(State);
+		lan.Enter_zip(Zip);
+	}
+	
+	
+	@And("^click on Continue button$")
+	public void Click_Continue_button()
+	{
+		lan.click_continuebutton();
+	}
+	
+	@And("^Click on Make Payment button$")
+	public void Click_MakePyament_Button()
+	{
+		lan.click_Make_Payment_button();
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Then("Verify user lands on Payment page")
+	public void Verify_PageUrl()
+	{
+		Assert.assertEquals("Log in to your PayPal account", driver.getTitle());
+		s.write("user landed on payment page");
+	}
+	
+	@And("^user enters coupon code \"(.*)\"$")
+	public void user_enters_coupon_code(String x)
+	{
+		lan.enter_couponcode(x);
+	}
+	
+	@And("^click on ApplyCoupon button$")
+	public void click_ApplyCoupon_button()
+	{
+		click_ApplyCoupon_button();
+	}
+	
+	@Then("^Verify Coupon code successfully applied message with \"(.*)\"$")
+	
+	
+}

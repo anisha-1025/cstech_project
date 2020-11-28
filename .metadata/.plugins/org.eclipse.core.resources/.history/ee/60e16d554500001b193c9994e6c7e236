@@ -1,0 +1,12 @@
+package Java_Interview_questions;
+
+public class Smallest_Largest {
+
+	public static void main(String[] args) {
+		
+		int largest=0;
+		int smallest=0;
+		
+	}
+
+}

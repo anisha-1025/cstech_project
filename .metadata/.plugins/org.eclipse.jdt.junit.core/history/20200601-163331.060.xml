@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="28" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="TestRunner.VCARERunner" incomplete="true">
+    <testsuite name="Feature: Verify Billing-Adjustments tab" incomplete="true">
+      <testsuite name="Scenario: 1. Add an Adjustments Charge" time="12.279">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1. Add an Adjustments Charge" time="1.109"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1. Add an Adjustments Charge" time="2.969"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1. Add an Adjustments Charge" time="0.531"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1. Add an Adjustments Charge" time="2.717"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 1. Add an Adjustments Charge" time="0.248"/>
+        <testcase name="And Click on AddAdjustment button" classname="Scenario: 1. Add an Adjustments Charge" time="2.448"/>
+        <testcase name="And Enter value in below Adjsutment fields" classname="Scenario: 1. Add an Adjustments Charge" time="2.068"/>
+        <testcase name="And Click on Adjustment_ADD button" classname="Scenario: 1. Add an Adjustments Charge" time="0.187"/>
+        <testcase name="Then Verify the successful alert message as &quot;Added Successfully&quot;" classname="Scenario: 1. Add an Adjustments Charge" time="0.002"/>
+      </testsuite>
+      <testsuite name="Scenario: 2. Edit an Adjustments Charge" incomplete="true">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 2. Edit an Adjustments Charge" time="1.135"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Seacrh an Adjustment &quot;Ria&quot;" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Edit link for respective adjustment" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Update value in below Adjsutment fields" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Adjustment_UPDATE button" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;Updated Successfully&quot;" classname="Scenario: 2. Edit an Adjustments Charge" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: 3. Delete an Adjustments Charge" incomplete="true">
+        <testcase name="Given Launch Vcare application" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Adjustments tab" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Seacrh an Adjustment &quot;Ria&quot;" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Delete link for respective adjustment" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="And Click on Adjustment_Delete_YES confirmation button" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;Deleted Successfully&quot;" classname="Scenario: 3. Delete an Adjustments Charge" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

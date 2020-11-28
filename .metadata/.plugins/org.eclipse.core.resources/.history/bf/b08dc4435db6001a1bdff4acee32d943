@@ -1,0 +1,6 @@
+
+public interface Interface_example {
+	 public void start();
+	 public void stop();
+
+}

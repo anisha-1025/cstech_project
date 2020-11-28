@@ -1,0 +1,45 @@
+package Java_Interview_questions;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class String_Question_Characters_are_Unique {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Please enter a String: ");
+		String input= sc.nextLine();
+		 if(isUnique(input))
+		{
+			System.out.println("All characters are unique");
+		}
+		else {
+			System.out.println("All characters are not unique");
+		}
+		 
+		 sc.close();
+		
+	}
+	
+
+	private static boolean isUnique(String input) {
+		
+		Set<Character> set= new HashSet<Character>();
+		char[] carray= input.toCharArray();
+		
+		for(Character c: carray)
+		{
+			if(!set.add(c))
+			{
+				return false;
+			}
+			
+		}
+		return true;
+		
+	}
+
+}

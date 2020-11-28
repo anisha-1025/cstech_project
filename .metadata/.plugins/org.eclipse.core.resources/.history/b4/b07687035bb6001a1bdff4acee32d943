@@ -1,0 +1,8 @@
+
+public abstract class abstractexample {
+
+	public void start()
+	{
+		
+	}
+}

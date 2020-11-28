@@ -1,0 +1,14 @@
+package Java_Interview_questions;
+
+public class Smallest_Largest {
+
+	public static void main(String[] args) {
+		
+		int largest=0;
+		int smallest=0;
+		int[] array=new int[] {100,7878,3454,889,0,98876,9999999};
+		for(int i=0; i< )
+		
+	}
+
+}

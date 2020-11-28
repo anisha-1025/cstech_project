@@ -1,0 +1,21 @@
+package Java_Interview_questions;
+
+public class SwapStringValues {
+
+	public static void main(String[] args) {
+		String x="HELLO";
+		String y="WORLD";
+		x= x+y; //HELLOWORLD
+		
+		y=x.substring(0, 5);
+		System.out.println("String y : " +y);
+		
+		x= x.substring(5);
+		System.out.println("String x: " +x);
+		
+		
+		
+
+	}
+
+}

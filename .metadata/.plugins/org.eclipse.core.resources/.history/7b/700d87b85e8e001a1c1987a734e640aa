@@ -1,0 +1,64 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	@FindBy(xpath = "//input[@name='custid']")
+	public WebElement CustomerId; 
+	
+	@FindBy(xpath = "//input[@name='email']")
+	public WebElement Username; 
+	
+	@FindBy(xpath = "//input[@name='password']")
+	public WebElement Login_Password; 
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement SignInButton;
+	
+	@FindBy(xpath = "//a[text()='Register Now!']")
+	public WebElement RegisterNowLink; 
+	
+	@FindBy(xpath = "//a[text()='Forgot Customer Id/ Password?']")
+	public WebElement ForgotCustId_Password; 
+	
+	@FindBy(xpath = "//input[@name='EmailID']")
+	public WebElement ForgotPasswordPageEmailId;
+	
+	public LoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+	
+	public void Enter_CustomerId(String custid)
+	{
+		CustomerId.sendKeys(custid);
+	}
+	public void Enter_Username(String email)
+	{
+		Username.sendKeys(email);
+	}
+	public void Enter_Login_Password(String password)
+	{
+		Login_Password.sendKeys(password);
+	}
+	public void Enter_SignIn_Button()
+	{
+		SignInButton.click();
+	}
+	
+	public void Click_RegisterLink()
+	{
+		RegisterNowLink.click();
+	}
+	
+	public void ForgotCustId_Password()
+	{
+		ForgotCustId_Password.click();
+	}
+	
+}

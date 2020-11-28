@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;PAGES.BillingPage&apos; to &apos;BasePackagePage&apos;&#x0D;&#x0A;- Original project: &apos;VCare&apos;&#x0D;&#x0A;- Original element: &apos;PAGES.BillingPage&apos;&#x0D;&#x0A;- Renamed element: &apos;PAGES.BasePackagePage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BillingPage&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;PAGES{BillingPage.java[BillingPage" matchStrategy="1" name="BasePackagePage" qualified="false" references="true" similarDeclarations="false" stamp="1590603203679" textual="false" version="1.0"/>
+</session>

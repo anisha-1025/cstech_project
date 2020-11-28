@@ -1,0 +1,59 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ServicesPage {
+
+	@FindBy(xpath = "//a[@href='/admin/Services/index']")
+	public WebElement ServicesList_Link;
+	
+	@FindBy(xpath = "//select[@id='ddlItem']" )
+	public WebElement select_Service_dropdown ;
+	
+	@FindBy(xpath = "//input[@id='filter']")
+	public WebElement Enter_Value_Search_By_Service_Text;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement service_search_buttotn;;
+	
+	@FindBy(xpath = "//table[@class='table']/tbody/tr[1]/td[1]")
+	public WebElement FirstServiceRowaftersort; ;
+	
+	@FindBy(xpath = "//a[text()='Create New']" )
+	public WebElement Service_CreateNew;
+	
+	@FindBy(xpath = "//input[@id='ServiceName']")
+	public WebElement Enter_Service_Name;
+	
+	@FindBy(xpath = "//input[@id='Description']")
+	public WebElement Enter_Description_Name;
+	
+	@FindBy(xpath = "//div[text()='Full Description']")
+	public WebElement Enter_Full_Description;
+	
+	@FindBy(xpath = "//input[@id='files']")
+	public WebElement choose_service_files;
+	
+	@FindBy(xpath = "//button[text()='Create Services']")
+	public WebElement Create_Service_Button; ;
+	@FindBy(xpath = "//table[@class='table']/tbody/tr/td/a[2]")
+	public WebElement Service_Edit_link;
+	
+	@FindBy(xpath = "//table[@class='table']/tbody/tr/td/a[3]")
+	public WebElement Service_Delete_link;
+	
+	@FindBy(xpath = "//button[text()='Update']")
+	public WebElement Service_Update_button;
+	
+	@FindBy(xpath = "//button[text()='OK']")
+	public WebElement Service_delete_OK_Button;
+	
+	
+	public ServicesPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+}

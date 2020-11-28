@@ -1,0 +1,78 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CouponsPage {
+
+	
+	@FindBy(xpath = "//a[@href='/admin/Coupons/index']")
+	public WebElement coupons_list_link;
+	
+	@FindBy(xpath = "//select[@id='ddlItem']")
+	public WebElement coupon_select_dropdown;
+	
+	@FindBy(xpath = "//input[@id='filter']")
+	public WebElement search_by_coupon_text_box;
+	
+	@FindBy(xpath = "//button[@id='btnSearch']")
+	public WebElement coupon_search_button;
+	
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement 
+	
+	@FindBy(xpath = "")
+	public WebElement ;
+	
+	public CouponsPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	public void click_coupons_list_link()
+	{
+		coupons_list_link.click();
+	}
+	public void click_coupon_select_dropdown()
+	{
+		coupon_select_dropdown.click();
+	}
+	public void Enter_search_by_coupon_text_box(String s)
+	{
+		search_by_coupon_text_box.sendKeys(s);
+	}
+	
+	public void click_coupon_search_button()
+	{
+		coupon_search_button.click();
+	}
+}

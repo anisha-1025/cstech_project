@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="8" started="8" failures="0" errors="2" ignored="4">
+  <testsuite name="TestRunner.VCARERunner" time="19.452">
+    <testsuite name="Feature: Verify User is able to view Child invoice" time="19.452">
+      <testsuite name="Scenario: 1.Generate Invoice for Individual child" time="19.308" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class='slimScrollDiv']/ul/li[6]/a/span
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteWebDriver&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_InvoiceList.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1.Generate Invoice for Individual child" time="1.976"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="7.164"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1.Generate Invoice for Individual child" time="10.149"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1.Generate Invoice for Individual child" time="0.011">
+          <error>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class='slimScrollDiv']/ul/li[6]/a/span
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteWebDriver&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.click(Unknown Source)&#13;
+	at PAGES.BasePackagePage.Click_BillingTab(BasePackagePage.java:99)&#13;
+	at VcareGLUE.vcareglue.Click_Billing_Tab(vcareglue.java:1049)&#13;
+	at ✽.And Click on Billing tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_InvoiceList.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on InvoiceList tab" classname="Scenario: 1.Generate Invoice for Individual child" time="0.001" ignored="true"/>
+        <testcase name="And Enter Child name &quot;dhruvi soni&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="0.001" ignored="true"/>
+        <testcase name="And Click on View Details link" classname="Scenario: 1.Generate Invoice for Individual child" time="0.0" ignored="true"/>
+        <testcase name="Then Verify user page title as &quot;V Care - Invoice Details&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="0.14" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

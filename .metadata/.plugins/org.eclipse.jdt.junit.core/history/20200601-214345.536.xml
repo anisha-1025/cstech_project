@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VCARERunner" project="VCare" tests="8" started="8" failures="0" errors="2" ignored="3">
+  <testsuite name="TestRunner.VCARERunner" time="13.912">
+    <testsuite name="Feature: Verify Login feature with different scenarios" time="13.912">
+      <testsuite name="Scenario: 1.Generate Invoice for Individual child" time="13.867" incomplete="true">
+        <error>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (3d14a403239a4d8b930ce279315b4f85)] -&gt; xpath: //a[text()='Generate Invoice']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3d14a403239a4d8b930ce279315b4f85&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1406)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:7)&#13;
+&#13;
+</error>
+        <testcase name="Given Launch Vcare application" classname="Scenario: 1.Generate Invoice for Individual child" time="0.49"/>
+        <testcase name="Then Enter Customerid, Username and Password like &quot;21&quot;, &quot;anisha.prasoon@gmail.com&quot; &quot;Pass@123&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="2.349"/>
+        <testcase name="And Click on SignIn button" classname="Scenario: 1.Generate Invoice for Individual child" time="0.571"/>
+        <testcase name="And Click on Billing tab" classname="Scenario: 1.Generate Invoice for Individual child" time="10.447"/>
+        <testcase name="And Click on GenerateInvoice tab" classname="Scenario: 1.Generate Invoice for Individual child" time="0.009">
+          <error>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (3d14a403239a4d8b930ce279315b4f85)] -&gt; xpath: //a[text()='Generate Invoice']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-U6M5AKJ', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3d14a403239a4d8b930ce279315b4f85&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#13;
+	at VcareGLUE.vcareglue.Click_generateInvoice_tab(vcareglue.java:1406)&#13;
+	at ✽.And Click on GenerateInvoice tab(C:/AnishaWorkspace/VCare/src/test/resources/Feature/Billing_GenerateInvoice.feature:7)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Select below options" classname="Scenario: 1.Generate Invoice for Individual child" time="0.004" ignored="true"/>
+        <testcase name="And Click on GenerateInvoice button" classname="Scenario: 1.Generate Invoice for Individual child" time="0.003" ignored="true"/>
+        <testcase name="Then Verify the successful alert message as &quot;'Successfully Invoice Generated&quot;" classname="Scenario: 1.Generate Invoice for Individual child" time="0.03" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,13 @@
+package Java_Interview_questions;
+
+public class String_reverse {
+
+	public static void main(String[] args) {
+		
+		String word="This String will get reversed";
+		String reverseword="";
+		
+
+	}
+
+}

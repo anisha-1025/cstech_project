@@ -1,0 +1,42 @@
+package PAGES;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class UserDetailsPage {
+	
+	@FindBy(xpath = "//a[@href='/admin/UserDetails/index']")
+	public WebElement UserDetails_link;
+	
+	@FindBy(xpath = "//select[@id='ddlItem']")
+	public WebElement select_dropdown_user_details;
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+	
+	@FindBy(xpath = )
+	public WebElement
+
+}

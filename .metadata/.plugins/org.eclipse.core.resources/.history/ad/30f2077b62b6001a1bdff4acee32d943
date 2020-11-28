@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class arraylist_example  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList a= new ArrayList();
+		a.add(10);
+		a.add("anisha");
+		a.add("anisha");
+		
+		//for(int i=0; i<a.size();i++)
+		//{
+			System.out.println(a);
+		//}
+
+	/****GENERIC ARRAYLIST*************/
+	ArrayList<Integer> aint= new ArrayList<Integer>(); 
+	aint.add(10);
+	aint.add(20);
+	System.out.println(aint);
+	
+	
+	ArrayList<String> as= new ArrayList<String>();
+	as.add("anisha");
+	as.add("riyu");
+	
+System.out.println(as);
+
+
+
+ArrayList<TestCar> tc = new ArrayList<TestCar>();
+TestCar t= new TestCar("anisha", "prasoon");
+TestCar t1= new TestCar("arun", "marata");
+tc.add(t);
+tc.add(t1);
+
+Iterator<TestCar> it= tc.iterator();
+while(it.hasNext())
+{
+	TestCar test= it.next();
+	System.out.println(test.name ", " test.surname);
+	System.out.println(test.surname);
+}
+	
+	
+	}
+	
+	
+}
